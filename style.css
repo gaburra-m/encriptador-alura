@@ -13,21 +13,23 @@ html{
     background-color: var(--Light-blue-100);
 }
 header{
-    margin: 2.5rem 5.25rem;
+    margin: 2.5rem 0 0 5.25rem;
 }
 main{
     width: 100%;
-    /* max-width:72.5rem; */
+    max-width: 90rem;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5rem;
+    /* gap: 1rem; */
 }
 .encriptador{
     width: 100%;
     max-width: 40rem;
     color: var(--Dark-blue-300);
+    padding: 2rem;
 }
 .input{
     font-family: 'Inter', sans-serif;
@@ -62,7 +64,7 @@ main{
     gap: 16px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 .btn{
     width: 40%;
@@ -96,7 +98,7 @@ main{
     width: 100%;
     max-width: 20rem;
     padding: 2rem;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 .repuesta-encriptada{
@@ -167,15 +169,20 @@ p span{
     font-weight: 700;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1125px) {
     header{
         margin: 2.5rem 2rem;
     }
     .respuesta{
         width: 100%;
-        max-width: none;
+        max-width: 46.25rem;
     }
     .respuesta-imagen img{
         display: none;
+    }
+}
+@media screen and (max-width: 741px){
+    .btn{
+        width: 100%;
     }
 }

@@ -40,6 +40,13 @@ function copiar(){
     let textoCopiado = document.getElementById("textoEncriptado")
     textoCopiado.select()
     document.execCommand("copy")
+    borrarInput()
 }
 
+function borrarInput(){
+    let input= document.getElementById("input");
+    if (input.value !="") {
+        input.value = "";
+    }
+}
 
