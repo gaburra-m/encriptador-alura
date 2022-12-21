@@ -63,7 +63,7 @@ main{
     justify-content: center;
     gap: 16px;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /* margin-bottom: 4rem; */
 }
 .btn{
@@ -181,8 +181,11 @@ p span{
         display: none;
     }
 }
-@media screen and (max-width: 741px){
+@media screen and (max-width: 703px){
+    .btns{
+        flex-wrap: wrap;
+    }
     .btn{
-        width: 100%;
+        width: 100%;       
     }
 }
