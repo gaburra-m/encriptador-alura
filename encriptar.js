@@ -11,20 +11,14 @@ function mostrarTexto(){
     document.getElementById("respuesta-imagen").setAttribute("style", "display: none;");
     document.getElementById("repuesta-encriptada").setAttribute("style", "display: flex;");
 }
+
 function encriptar(){
     let textoInput = document.getElementById("input").value.toLowerCase()
     let encriptado = textoInput.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat")
 
     mostrarTexto()
     document.getElementById("textoEncriptado").innerText = encriptado
-    console.log(`Encriptado ${encriptado}`)
 }
-
-// La letra "e" es convertida para "enter"
-// La letra "i" es convertida para "imes"
-// La letra "a" es convertida para "ai"
-// La letra "o" es convertida para "ober"
-// La letra "u" es convertida para "ufat"
 
 function desencriptar(){
     let textoInput = document.getElementById("input").value.toLowerCase()
@@ -33,7 +27,6 @@ function desencriptar(){
 
     mostrarTexto()
     document.getElementById("textoEncriptado").innerText = desencriptado
-    console.log(`Desencriptado ${desencriptado}`)
 }
 
 function copiar(){
@@ -44,9 +37,9 @@ function copiar(){
 }
 
 function borrarInput(){
-    let input= document.getElementById("input");
+    let input= document.getElementById("input")
     if (input.value !="") {
-        input.value = "";
+        input.value = ""
     }
 }
 
