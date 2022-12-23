@@ -1,8 +1,14 @@
 :root{
     --Light-blue-100: #F3F5FC;
+    --Light-blue-200: #EFF1FA;
     --Light-blue-300: #E9ECF8;
+    --Dark-blue-100: #609ED4;
+    --Dark-blue-200: #356EA9;
     --Dark-blue-300: #0A3871;
     --Dark-blue-400: #072B61;
+    --Dark-blue-500: #052051;
+    --Gray-100: #CED4DA;
+    --Gray-200: #ADB5BD;
     --Gray-500: #343A40;
     --Gray-400: #495057;
 }
@@ -185,5 +191,60 @@ p span{
     }
     .btn{
         width: 100%;       
+    }
+}
+@media (prefers-color-scheme: dark) {
+    html{
+        background-color: var(--Dark-blue-500);
+        color: var(--Light-blue-100);
+    }
+    #logo{
+        fill: var(--Light-blue-100);
+    }
+    .encriptador{
+        color: var(--Light-blue-100);
+    }
+    .input{
+        color: var(--Light-blue-100);
+    }
+    .input::placeholder{
+        color: var(--Light-blue-100);
+    }
+    .btn{
+        border: 1px solid var(--Dark-blue-100);
+    }
+    .cta{
+        background-color: var(--Dark-blue-100);
+        color: var(--Dark-blue-500);
+    }
+    .cta:hover{
+        background-color: var(--Dark-blue-200);
+    }
+    .cta2{
+        color: #fff;
+    }
+    .cta2:hover{
+        background-color: var(--Dark-blue-400);
+    }
+    .respuesta{
+        background-color: var(--Dark-blue-300);
+    }
+    .respuesta-texto__h2{
+        color: #fff;
+    }
+    .respuesta-texto__p{
+        color: var(--Light-blue-200);
+    }
+    .repuesta-texto{
+        color: #fff;
+    }
+    .copy{
+        background-color: transparent;
+    }
+    .copy:hover{
+        background-color: var(--Dark-blue-400);
+    }
+    p span{
+        color: var(--Dark-blue-100);
     }
 }
